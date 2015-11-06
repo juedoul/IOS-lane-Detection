@@ -1,8 +1,11 @@
 # IOS-lane-Detection
 
-##Title:Real Time Lane Detection
-##members:Yujun Wang(Andrew ID: yujunwan) Juedou Liu(Andrew ID: juedoul)
-##Summary:We want to detect road lane in real time video. Because opencv hough transformation is slow. We want to find a fast way to do it on mobile devise.
+##Title:
+Real Time Lane Detection
+##members:
+Yujun Wang(Andrew ID: yujunwan) Juedou Liu(Andrew ID: juedoul)
+##Summary:
+We want to detect road lane in real time video. Because opencv hough transformation is slow. We want to find a fast way to do it on mobile devise.
 ##Background:
  We will use descriptors to detect yellow and white road lines.Then use hough transformation to mark the lane area in the video. We will take advantage of OpenGL ES GPUImage package to accelerate the computing speed.
  
