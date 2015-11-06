@@ -1,7 +1,7 @@
  # IOS-lane-Detection
 ##Title:
 Mobile Real Time Road Lane Detection
-##members:
+##Members:
 Yujun Wang(Andrew ID: yujunwan) and Juedou Liu(Andrew ID: juedoul)
 ##Summary:
 We want to detect road lane in real time video. Because opencv hough transformation is slow. We want to find a fast way to do it on mobile devise.
@@ -16,11 +16,11 @@ Sloving this problem in mobile platform means a lot. It further can be combine w
 
 ###Plan to Achieve: 
 ####Detect road lines:
-use Descriptors and Hough transformation.
+Use descriptors and hough transformation.
 ####Segment the road into different lanes:
 Draw different lane into different and show it on the video.
 ####Extra goal:
-combine with GPS and IMU tracking the lane.
+Combine with GPS and IMU tracking the lane.
 
 ###Evaluation:
 Based on processing speed and vision result.
