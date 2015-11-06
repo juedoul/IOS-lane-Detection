@@ -3,7 +3,7 @@
 ##Title:
 Mobile Real Time Lane Detection
 ##members:
-Yujun Wang(Andrew ID: yujunwan) Juedou Liu(Andrew ID: juedoul)
+Yujun Wang(Andrew ID: yujunwan) and Juedou Liu(Andrew ID: juedoul)
 ##Summary:
 We want to detect road lane in real time video. Because opencv hough transformation is slow. We want to find a fast way to do it on mobile devise.
 ##Background:
