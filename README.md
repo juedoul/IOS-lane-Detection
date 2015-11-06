@@ -1,6 +1,6 @@
  # IOS-lane-Detection
 ##Title:
-Mobile Real Time Lane Detection
+Mobile Real Time Road Lane Detection
 ##members:
 Yujun Wang(Andrew ID: yujunwan) and Juedou Liu(Andrew ID: juedoul)
 ##Summary:
