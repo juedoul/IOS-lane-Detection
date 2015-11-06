@@ -1,7 +1,4 @@
  # IOS-lane-Detection
-test::::
-====
-{{qwq
 ##Title:
 Mobile Real Time Lane Detection
 ##members:
