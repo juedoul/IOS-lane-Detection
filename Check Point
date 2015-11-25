@@ -1,0 +1,56 @@
+Goal:
+Find a way to detect road lane in real time on mobile device.
+We want to detect lanes in following steps:
+Get video captured by back camera on IOS device;
+Get data of the orientation of the camera from IMU and calculate a homography matrix for the image to transform the 
+image into bird eye vision.	
+In bird’s-eye view, the lanes which are not parallel in the original image will become parallel lines.
+Detect road lines by the feature of the lines ( white in the middle, darker in left and right)
+Eliminate noise and do distance transformation.
+Get the line position, and transform back to original image.
+As we want to detect the lane in real time, so for each frame the video, we do the steps above and  show the 
+processed image on the screen.Since the hough transformation is slow, we will do a binary search based on road line 
+features. It will be fast and theoretically be done in real time.
+So far, our goal is mainly to detect the straight lane in the road, if time permitted, we want to detect turns in the
+road (curves in the image).	    
+
+Work have been done:
+First week: 
+Doing researches on road lane detection and determine the main method to do detection.                               
+                                                                                          —Juedou Liu and Yujun Wang
+Decide methods we need in this project.                      															—Juedou Liu and Yujun Wang
+Learn about OpenCV camera.                                                                —Yujun Wang
+
+Second week:
+Learn about CMMotionManager in order to get data from IMU of our device.                  —Juedou Liu 
+Complete sample app to test camera part that we can do real time image processing.        —Yujun Wang
+Complete sample app to test IMU part that we can get data from IMU to know the orientation of the device. 
+                                                                                          —Juedou Liu
+Design a simple UI for the app                                                            —Juedou Liu 
+
+Schedule for the next two weeks
+First half of third week:
+Complete and test the homography matrix to transform the image into bird’s eye view.      —Juedou Liu
+
+Second half of third week:
+Road lines detection.                                                                     —Yujun Wang
+Distance transformation.                                                                  —Yujun Wang
+
+First half of Forth week:
+Integrate all the parts and test.                                                         —Juedou Liu
+Refine the UI of app.                                                                     —Yujun Wang
+
+Second half of Forth week:
+Finalize the app.                                                                         —Juedou Liu
+Make a YouTube clip describing the app.                                                   —Yujun Wang
+Finish final writeup.                                                                     —Juedou Liu and Yujun Wang
+
+Problems we have meet so far and some concerns in the future
+The camera part we use CvVideoCamera in OpenCV(opencv/highgui/ios.h) conflict with armadillo package, so we can’t
+integrate the warp part and the camera part. Thus, we need other method to open the camera and process video frame by
+frame.  AVFoundation is a potential alternation for OpenCv camera.
+There are several methods to generate the homography matrix to warp the image, we may need to try some of the methods
+to determine which one have fairly good result within the time constrain of the task.
+If we use IMU to get the data for homography matrix, it may not stable because the device will be moving.
+If we use Lucas-Kanade method to match to image captured by camera with the template (a general road image), will it
+be efficient?
